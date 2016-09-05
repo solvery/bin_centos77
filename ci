@@ -1,0 +1,5 @@
+#!/bin/bash
+
+content=`pwd | sed 's/.*\///g'`
+
+git commit -a -m "$content"
