@@ -1,0 +1,11 @@
+#!/bin/sh
+
+rdir=$PWD
+
+for dir in $(cat $1); do
+    #echo $dir
+    cd $rdir/$dir
+    pwd
+    ${@:2:9}
+done
+
