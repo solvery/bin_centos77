@@ -3,7 +3,7 @@ alias ll='ls -lh'
 alias lt='ls -lhrt'
 
 export PS1='[\u@\h \W]\$ '
-export PATH=$PATH:/workspace/bin
+export PATH=$PATH:~/bin
 
 export PROMPT_COMMAND='{ msg=$(history 1 | { read x y; echo $y; });user=$(whoami); echo $msg:$PWD:$(date "+%Y-%m-%d %H:%M:%S"):$user:$(who am i); } >> /workspace/.history-$(date "+%Y-%m")'
 
@@ -21,4 +21,7 @@ alias grepv='grep -r --include=*.v '
 alias greph='grep -r --include=*.h '
 alias grepc='grep -r --include=*.c --include=*.cpp --include=*.cc --include=*.h '
 
-
+export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_102
+export JRE_HOME=${JAVA_HOME}/jre  
+export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib  
+export PATH=${JAVA_HOME}/bin:$PATH  
