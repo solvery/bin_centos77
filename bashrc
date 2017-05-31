@@ -2,6 +2,8 @@
 alias ll='ls -lh'
 alias lt='ls -lhrt'
 
+alias sr='screen -D -R'
+
 export PS1='[\u@\h \W]\$ '
 export PATH=$PATH:~/bin
 
@@ -21,7 +23,6 @@ alias grepv='grep -r --include=*.v '
 alias greph='grep -r --include=*.h '
 alias grepc='grep -r --include=*.c --include=*.cpp --include=*.cc --include=*.h '
 
-export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_102
-export JRE_HOME=${JAVA_HOME}/jre  
-export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib  
-export PATH=${JAVA_HOME}/bin:$PATH  
+alias c1='cat /workspace/c1'
+alias c2='cat /workspace/c2'
+alias c3='cat /workspace/c3'
