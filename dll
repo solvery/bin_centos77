@@ -1,0 +1,3 @@
+for link in $(cat $@); do
+	youtube-dl -o "%(playlist)s_%(title)s.%(ext)s" $link | tee -a .log
+done
