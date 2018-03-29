@@ -1,3 +1,3 @@
 for link in $(cat $@); do
-	youtube-dl -o "%(title)s.%(ext)s" $link | tee -a .log 
+	youtube-dl -o "%(title)s.%(ext)s" $link 2>&1 | tee -a .log 
 done
