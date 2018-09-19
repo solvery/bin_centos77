@@ -1,0 +1,5 @@
+find . -name *=* -delete
+find . -name *.html -delete
+find . -name *.css -delete
+find . -name *.js -delete
+find -type d -empty
