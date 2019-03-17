@@ -3,6 +3,7 @@ alias ll='ls -lh'
 alias lt='ls -lhrt'
 
 alias sr='screen -D -R'
+alias record='explorer.exe shell:appsFolder\Microsoft.WindowsSoundRecorder_8wekyb3d8bbwe!App'
 
 export PS1='[\u@\h \W]\$ '
 export PATH=$PATH:~/bin
