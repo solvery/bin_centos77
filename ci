@@ -2,4 +2,4 @@
 
 content=`pwd | sed 's/.*\///g'`
 
-git commit -a -m "$content"
+git commit -a -m "1 $content" 

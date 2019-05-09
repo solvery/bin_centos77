@@ -1,16 +1,18 @@
 
 alias ll='ls -lh'
 alias lt='ls -lhrt'
+alias o='/mnt/c/Windows/explorer.exe'
 
 alias sr='screen -D -R'
 alias record='explorer.exe shell:appsFolder\Microsoft.WindowsSoundRecorder_8wekyb3d8bbwe!App'
 
 export PS1='[\u@\h \W]\$ '
 export PATH=$PATH:~/bin
+export PATH=$PATH:/mnt/d/work/bin
 
-export PROMPT_COMMAND='{ msg=$(history 1 | { read x y; echo $y; });user=$(whoami); echo $msg:$PWD:$(date "+%Y-%m-%d %H:%M:%S"):$user:$(who am i); } >> /workspace/.history-$(date "+%Y-%m")'
+export PROMPT_COMMAND='{ msg=$(history 1 | { read x y; echo $y; });user=$(whoami); echo $msg:$PWD:$(date "+%Y-%m-%d %H:%M:%S"):$user:$(who am i); } >> ~/workspace/.history-$(date "+%Y-%m")'
 
-cd /workspace
+#cd ~/workspace
 
 
 #git
