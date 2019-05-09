@@ -90,7 +90,6 @@ alias l='ls -CF'
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
-
 source ~/bin/bashrc
 
 # enable programmable completion features (you don't need to enable

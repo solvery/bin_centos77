@@ -13,6 +13,7 @@ set showcmd
 set tw=0
 "set incsearch	
 set fileformats=unix,dos
+let g:vimwiki_url_maxsave=0
 
 map <F2> :e ++ff=dos<CR>
 map <F3> :set mouse=a<CR>
@@ -101,14 +102,15 @@ endfunction
 "	\ 'auto_export': 1,
 
 if MySys()=="unix"
+	cd ~/workspace/wiki
 	"colorscheme ron
-	colorscheme darkblue
+	"colorscheme darkblue
 	set fileencodings=utf-8,gb2312,gbk,gb18030
 	set termencoding=utf-8
 	"set fileformats=unix
 	set encoding=utf-8
 	
-	let g:vimwiki_list = [{'path': '/workspace/wiki/',
+	let g:vimwiki_list = [{'path': '~/workspace/wiki/',
 		\ 'path_html': '/var/www/',
 		\ 'template_path': '/workspace/wiki/.template/',
 		\ 'template_default': 'united',
