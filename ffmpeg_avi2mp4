@@ -1,0 +1,10 @@
+
+for file in $(ls *.avi); do 
+    filename=${file%.*}
+    if [ -f $filename.mp4 ]
+    then
+        echo "$filename.mp4 exist"
+    else
+        ffmpeg -i $filename.avi -s 1920x1080 $filename.mp4
+    fi 
+done

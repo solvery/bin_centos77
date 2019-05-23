@@ -1,0 +1,16 @@
+
+for file in $(ls *.mkv *.MOV *.mov *.mp4 *.webm *.avi *.ts *.flv); do 
+    filename=${file%.*}
+    if [ -f $filename\_x265.mp4 ]
+    then
+        echo "$filename\_x265.mp4 exist"
+        continue
+    fi
+    if [[ "$filename" =~ "_x265" ]]
+    then
+        echo "$file exist"
+    else
+        echo $filename\_x265.mp4
+        /mnt/d/work/bin/ffmpeg.exe -i "$file" -c:v libx265 -preset medium -crf 28 -c:a aac -b:a 128k $filename\_x265.mp4
+    fi 
+done
