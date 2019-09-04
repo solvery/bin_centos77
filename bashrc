@@ -8,7 +8,7 @@ alias record='explorer.exe shell:appsFolder\Microsoft.WindowsSoundRecorder_8weky
 
 export PS1='[\u@\h \W]\$ '
 export PATH=$PATH:~/bin
-export PATH=$PATH:/mnt/d/work/bin
+export PATH=$PATH:/mnt/d/work/bin:/mnt/d/tools_eda/matlab2018b/bin
 
 export PROMPT_COMMAND='{ msg=$(history 1 | { read x y; echo $y; });user=$(whoami); echo $msg:$PWD:$(date "+%Y-%m-%d %H:%M:%S"):$user:$(who am i); } >> ~/workspace/.history-$(date "+%Y-%m")'
 

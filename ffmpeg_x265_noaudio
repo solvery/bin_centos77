@@ -11,6 +11,6 @@ for file in $(ls *.mkv *.MOV *.mov *.mp4 *.webm *.avi *.ts *.flv); do
         echo "$file exist"
     else
         echo $filename\_x265.mp4
-        /mnt/d/work/bin/ffmpeg.exe -i "$file" -c:v libx265 -preset medium -crf 28 -an $filename\_x265.mp4
+        /mnt/d/work/bin/ffmpeg.exe -i "$file" -c:v libx265 -x265-params lossless -an $filename\_x265.mp4
     fi 
 done
