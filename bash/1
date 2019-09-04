@@ -1,0 +1,5 @@
+cp -a ~/.bashrc    .bashrc
+cp -a ~/.gitconfig .gitconfig
+cp -a ~/.gitignore .gitignore
+cp -a ~/.gitk      .gitk
+cp -a ~/.vimrc     .vimrc

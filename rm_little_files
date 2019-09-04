@@ -1,0 +1,4 @@
+find *  -type f -size -16k -delete 
+find * -name "*.html*" -delete
+find * -name "*id=*" -delete
+find * -name "*.jsp*" -delete
