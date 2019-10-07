@@ -1,0 +1,4 @@
+echo "source ~/bin/bashrc" >> ~/.bashrc
+cp -a .gitconfig ~/.gitconfig 
+cp -a .gitignore ~/.gitignore 
+cp -a .vimrc     ~/.vimrc     
