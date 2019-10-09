@@ -1,4 +1,4 @@
-echo "source ~/bin/bashrc" >> ~/.bashrc
+echo "source ~/bin/bash/bashrc" >> ~/.bashrc
 cp -a .gitconfig ~/.gitconfig 
 cp -a .gitignore ~/.gitignore 
 cp -a .vimrc     ~/.vimrc     
