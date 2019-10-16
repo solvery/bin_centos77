@@ -10,4 +10,4 @@ alias mv='mv -i'
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
-source ~/bin/bash/bashrc
+source /workspace/bin/bash/bashrc
