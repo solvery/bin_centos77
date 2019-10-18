@@ -2,7 +2,7 @@
 	name = solvery@163.com
 	email = solvery@163.com
 [core]
-	excludesfile = /root/.gitignore
+	excludesfile = ~/.gitignore
 	editor = vim
 	autocrlf = false
 [alias] 
