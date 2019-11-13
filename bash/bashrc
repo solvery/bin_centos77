@@ -1,4 +1,7 @@
-source /eda/env_eda.sh
+
+if [ -f /eda/env_eda.sh ]; then
+	. /eda/env_eda.sh
+fi
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
