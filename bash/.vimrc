@@ -33,3 +33,4 @@ nmap <F10> :call Mydict1()<CR> <C-W>w b
 map <F11> :call Myword()<CR><C-W>w /<C-R>=expand("<cword>")<CR><CR>N
 map <F12> <ESC>^i*<ESC>ww
 
+au BufRead,BufNewFile *.sv set filetype=systemverilog
