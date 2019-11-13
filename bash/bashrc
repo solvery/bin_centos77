@@ -1,3 +1,5 @@
+source /eda/env_eda.sh
+
 # Source global definitions
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
@@ -14,6 +16,8 @@ alias sr='screen -D -R'
 
 export PS1='[\u@\h \W]\$ '
 export PATH=$PATH:/workspace/bin
+export PATH=$PATH:/opt/rh/rh-ruby26/root/usr/bin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/rh/rh-ruby26/root/usr/lib64
 
 export PROMPT_COMMAND='{ msg=$(history 1 | { read x y; echo $y; });user=$(whoami); echo $msg:$PWD:$(date "+%Y-%m-%d %H:%M:%S"):$user:$(who am i); } >> /workspace/.history-$(date "+%Y-%m")'
 
